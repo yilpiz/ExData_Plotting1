@@ -1,7 +1,7 @@
-#assumes readData.r file is in working directory
+#assumes readData.R file is in working directory
 
-#source read_data.R file which reads source data
-source("./read_data.R")
+#source readData.R file which reads source data
+source("./readData.R")
 
 #get source data
 data<-read_data()
