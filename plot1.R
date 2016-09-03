@@ -1,10 +1,10 @@
 #assumes readData.r file is in working directory
 
 #source read_data.R file which reads source data
-source("./read_data.R")
+source("./readData.R")
 
 #get source data
-data<-read_data()
+data<-read_Data()
 
 #create plot device
 png(filename="plot1.png", width = 480, height = 480)
