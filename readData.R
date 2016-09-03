@@ -5,7 +5,7 @@ read_data()<-function()
     colnames<-c("Date","Time","Global_active_power","Global_reactive_power",
                 "Voltage","Global_intensity","Sub_metering_1","Sub_metering_2","Sub_metering_3")
     
-    #assume data is downloaded to working directory
+    #assume file is downloaded to working directory
     data<-read.table("./household_power_consumption.txt",col.names=colnames,header=TRUE,sep = ";",na.strings = "?")
     # concatenate date and time then convert to DateTime type
     data$Date=as.POSIXct(strptime(paste(data$Date,data$Time),"%d/%m/%Y %H:%M:%S"))
